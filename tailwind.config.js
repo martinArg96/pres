@@ -1,20 +1,10 @@
-/** @type {import('tailwindcss').Config} */
+import preset from './vendor/filament/support/tailwind.config.preset'
 
-const colors = require('tailwindcss/colors')
-
-module.exports = {
+export default {
+  presets: [preset],
   content: [
-    './app/**/*.php',
-    './config/**/*.php',
-    './resources/**/*.{php,js}',
-    './storage/framework/views/*.php',
+    './app/Filament/**/*.php',
+    './resources/views/**/*.blade.php',
+    './vendor/filament/**/*.blade.php',
   ],
-  theme: {
-    extend: {
-      colors: {
-        primary: colors.blue,
-      },
-    },
-  },
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 }
