@@ -6,6 +6,10 @@
 
     "build": "vite build"
   },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
 
   "devDependencies": {
     "@ryangjchandler/alpine-tooltip": "^2.0.0",
